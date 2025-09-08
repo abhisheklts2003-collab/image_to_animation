@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+requests
+imageio[ffmpeg]
+torch
+torchvision
+numpy
+PyYAML
+scikit-image
