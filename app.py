@@ -44,8 +44,11 @@ def process_motion(data: MotionRequest):
     # Apply motion transfer
     predictions = make_animation(source_image, driving_video, generator, kp_detector)
 
+
+
+    
     # Save output video
-    output_path = "output.mp4"
+    output_path = "result.mp4"   # <--- यहाँ नाम बदला
     imageio.mimsave(output_path, [frame for frame in predictions], fps=30)
 
     return {"status": "success", "video_path": output_path}
