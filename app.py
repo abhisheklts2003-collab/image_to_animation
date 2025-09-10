@@ -9,6 +9,11 @@ from demo import load_checkpoints, make_animation  # from FOMM repo
 
 app = FastAPI()
 
+
+import sys
+sys.path.append('/content/image_to_animation')
+
+
 # --------- Auto-Download Checkpoint ---------
 os.makedirs("checkpoints", exist_ok=True)
 checkpoint_path = "checkpoints/vox-cpk.pth.tar"
